@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="./stylesheet.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -17,9 +18,50 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div>
-        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-            <div>
+    <div class="wrapper">
+      <!-- Start sidebar -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="sidebar">
+            <input
+              type="search"
+              class="form-control ds-input"
+              placeholder="Search for a city"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action"
+                >Austin</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Chicago</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >New York</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Los Angeles</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Orlando</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-1"></div>
+          <div class="col-md-9 main">
+            <h1 class="page-header">Main</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="contianer-fluid">
+        <div class="row">
+            <div class="sidebar">
+        <div class="nav nav-sidebar">
             <input type="search" class="form-control ds-input" placeholder="Search for a city">
             <div class="input-group-append">
                 <button class="btn btn-primary" type="button">
@@ -38,9 +80,13 @@
             <a href="#" class="list-group-item list-group-item-action">Seattle</a>
             <a href="#" class="list-group-item list-group-item-action">Atlanta</a>
             </div>
-        </div>
-          
-      </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main float-right">
+            <p>this is a test</p>
+          </div>
+    
     </div>
+    </div>
+      </div>
+    </div> -->
   </body>
 </html>
