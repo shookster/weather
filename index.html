@@ -8,7 +8,6 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./stylesheet.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -22,18 +21,19 @@
       <!-- Start sidebar -->
       <div class="container-fluid">
         <div class="row">
-          <div class="sidebar col-md-3">
+          <div class="sidebar col-md-2 mh-100">
+            <!-- Search Bar -->
             <input
               type="search"
               class="form-control ds-input"
               placeholder="Search for a city"
             />
             <div class="input-group-append">
-              <button class="btn btn-primary" type="button">
+              <button class="btn btn-primary" type="button" id="search">
                 <i class="fa fa-search"></i>
               </button>
             </div>
-            <div class="list-group">
+            <div class="list-group" id="citySelector">
               <a href="#" class="list-group-item list-group-item-action"
                 >Austin</a
               >
@@ -50,47 +50,47 @@
                 >Orlando</a
               >
             </div>
+        </div>
+    <!-- Main content -->
+          <!-- Currently selected city -->
+        <div>
+          <div class="row">
+            <div class="col-md-8 main border">
+              <h1 class="">Minneapolis</h1>
+              <p>Temperature:</p>
+              <p>Humidity:</p>
+              <p>Wind Speed (MPH):</p>
+              <p>UV Index:</p>
+            </div>
           </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-8 main border float-right">
-            <h1 class="page-header">Minneapolis</h1>
-            <p>Temperature:</p>
-            <p>Humidity:</p>
-            <p>Wind Speed (MPH):</p>
-            <p>UV Index:</p>
+        <!-- Cards -->
+        <div class="row">
+          <div class="d-flex flex-wrap">
+            <div class="card card-body w-20 text-white bg-primary" id="day1">
+              <p>
+                Card 1
+              </p>
+            </div>
+            <div class="card card-body w-20 text-white bg-primary" id="day2">
+              Card 2
+            </div>
+            <div class="card card-body w-20 text-white bg-primary" id="day3">
+              Card 3
+            </div>
+            <div class="card card-body w-20 text-white bg-primary" id="day4">
+              Card 4
+            </div>
+            <div class="card card-body w-20 text-white bg-primary" id="day5">
+              Card 5
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- <div class="contianer-fluid">
-        <div class="row">
-            <div class="sidebar">
-        <div class="nav nav-sidebar">
-            <input type="search" class="form-control ds-input" placeholder="Search for a city">
-            <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fa fa-search"></i>
-                </button>
-              </div>     
-            </div>
-            <div class="list-group">     
-            <a href="#" class="list-group-item list-group-item-action">Austin</a>
-            <a href="#" class="list-group-item list-group-item-action">Chicago in</a>
-            <a href="#" class="list-group-item list-group-item-action">New York</a>
-            <a href="#" class="list-group-item list-group-item-action">Los Angeles</a>
-            <a href="#" class="list-group-item list-group-item-action">Orlando</a>
-            <a href="#" class="list-group-item list-group-item-action">Denver</a>
-            <a href="#" class="list-group-item list-group-item-action">San Franciso</a>
-            <a href="#" class="list-group-item list-group-item-action">Seattle</a>
-            <a href="#" class="list-group-item list-group-item-action">Atlanta</a>
-            </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main float-right">
-            <p>this is a test</p>
-          </div>
-    
     </div>
     </div>
-      </div>
-    </div> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
   </body>
 </html>
